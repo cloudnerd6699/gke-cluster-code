@@ -1,0 +1,28 @@
+Prerequisite
+
+cluster_name              = ""
+network                   = ""
+subnetwork                = ""
+ip_range_pods             = ""
+ip_range_services         = ""
+service_account           = ""
+
+Create a VPC
+- Create a Subnet -> 
+- Create a secondary ranges
+  - pod ranges
+  - service ranges
+- Create a Service Account(default service account)
+  - 2 permissions
+  - Storage admin
+  - Kubernetes engine developer
+
+
+Subnet range
+10.2.4.0/23	
+---------------------
+
+Secondary IPv4 ranges 
+---------------------
+pod-address-range	10.2.32.0/19	
+service-address-range	10.2.6.0/24
